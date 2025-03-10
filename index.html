@@ -1,62 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Social Media Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <!-- LinkedIn and GitHub Icons on the top-right corner -->
+  <div class="social-top">
+    <a href="https://www.linkedin.com/in/swathi-suryavamshi/" target="_blank" class="social-icon">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/Swati-S" target="_blank" class="social-icon">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
 
-    <!-- Hero Section (Intro) -->
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Swati Sharma</h1>
-            <p>I create beautiful, functional websites and applications.</p>
-            <a href="#about" class="btn">Learn More</a>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Your Name</h1>
+        <p>Your Role/Job Title</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#job">Job</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate full-stack developer with expertise in building responsive, user-friendly web applications. My key technologies include JavaScript, React.js, Node.js, and more. I am always looking for new challenges and opportunities to grow.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <p>HTML</p>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a web developer passionate about creating seamless and interactive user experiences.</p>
-            <p>Specialized in front-end technologies and always learning new tools and techniques to stay up to date with the latest trends.</p>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <p>CSS</p>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="project">
-                <h3><a href="https://github.com/your-repository1">Project 1</a></h3>
-                <p>Description of Project 1</p>
-            </div>
-            <div class="project">
-                <h3><a href="https://github.com/your-repository2">Project 2</a></h3>
-                <p>Description of Project 2</p>
-            </div>
-            <!-- Add more projects here -->
+        <div class="skill">
+          <i class="fab fa-js"></i>
+          <p>JavaScript</p>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you want to get in touch, feel free to email me or connect on LinkedIn!</p>
-            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-profile/">Your LinkedIn</a></p>
+        <div class="skill">
+          <i class="fab fa-react"></i>
+          <p>React.js</p>
         </div>
-    </section>
+        <div class="skill">
+          <i class="fab fa-node"></i>
+          <p>Node.js</p>
+        </div>
+        <div class="skill">
+          <i class="fab fa-git"></i>
+          <p>Git</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Swati Sharma. All Rights Reserved.</p>
-    </footer>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>
+          <a href="https://github.com/Swati-S/project-1" target="_blank">Project Title 1</a>
+        </h3>
+        <p>A brief description of your first project. A short overview that captures the essence of the project.</p>
+      </div>
+      <div class="project">
+        <h3>
+          <a href="https://github.com/Swati-S/project-2" target="_blank">Project Title 2</a>
+        </h3>
+        <p>A brief description of your second project. A short overview that captures the essence of the project.</p>
+      </div>
+      <!-- Add more projects here -->
+    </div>
+  </section>
 
+  <!-- Job Section -->
+  <section id="job">
+    <div class="container">
+      <h2>I'm Looking For</h2>
+      <p>
+        I am currently seeking a full-time position as a **Front-end Developer** or **Full-stack Developer** where I can leverage my skills in web development, problem-solving, and collaboration with a dynamic team.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Feel free to reach out via email or connect with me on LinkedIn!</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/swathi-suryavamshi/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:your-email@example.com" class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Swathi Suryavamshi. All rights reserved.</p>
+  </footer>
 </body>
 </html>
