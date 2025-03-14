@@ -1,164 +1,156 @@
 /* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
-    color: #333;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* Top-right Social Icons */
-  .social-top {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-  }
-  
-  .social-icon {
-    margin-left: 15px;
-    font-size: 2rem;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    color: #007bff;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #222;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  header nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  header nav ul li a:hover {
-    color: #007bff;
-  }
-  
-  /* Section Styles */
-  section {
-    padding: 60px 0;
-  }
-  
-  section h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  section p {
-    text-align: center;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* Skills Section */
-  .skills-list {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-  
-  .skill {
-    text-align: center;
-  }
-  
-  .skill i {
-    font-size: 4rem;
-    color: #007bff;
-  }
-  
-  .skill p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-  
-  /* Projects Section */
-  .project {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .project a {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #007bff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .project a:hover {
-    color: #0056b3;
-  }
-  
-  /* Job Section */
-  #job p {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 20px;
-    color: #444;
-  }
-  
-  /* Social Icons */
-  .social-icons {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .social-icon {
-    margin: 0 15px;
-    font-size: 2.5rem;
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icon:hover {
-    color: #007bff;
-  }
-  
-  /* Footer Styles */
-  footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  /* Replace 'images/background.jpg' with your background image path */
+  background: url('https://wallpapercave.com/wp/wp2912405.jpg') no-repeat center center fixed;
+  background-size: cover;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  /* Optional: add a subtle background for text readability */
+  background-color: rgba(237, 231, 231, 0.708);
+  border-radius: 8px;
+}
+
+/* Header */
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+header .logo h1 {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+header .logo p {
+  font-size: 1.1em;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+/* Social Icons */
+.social-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.social-icon {
+  margin-left: 10px;
+  color: #000;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+section h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+/* Skills Section */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column-reverse;  /* Places the text above the icon */
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill i {
+  font-size: 2.5em;
+  margin-top: 10px;
+}
+
+.skill p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+/* Projects Section */
+.project {
+  margin-bottom: 40px;
+}
+
+.project h3 a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.project p {
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+/* Job Section */
+#job p {
+  font-size: 1em;
+}
+
+/* Contact Section */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  font-size: 0.9em;
+}
