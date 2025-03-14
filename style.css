@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,41 +7,36 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #000;
-  /* Replace 'images/background.jpg' with your background image path */
   background: url('https://wallpapercave.com/wp/wp2912405.jpg') no-repeat center center fixed;
   background-size: cover;
+  background-color: #f4f4f4;
   line-height: 1.6;
 }
 
-/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  /* Optional: add a subtle background for text readability */
-  background-color: rgba(237, 231, 231, 0.708);
+  background-color: rgba(237, 231, 231, 0.9);
   border-radius: 8px;
 }
 
-/* Header */
 header {
   padding: 20px 0;
   border-bottom: 1px solid #ccc;
+  text-align: center;
 }
 
 header .logo h1 {
-  font-weight: bold;
   font-size: 2em;
-}
-
-header .logo p {
-  font-size: 1.1em;
+  font-weight: bold;
 }
 
 header nav ul {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -52,7 +46,6 @@ header nav ul li a {
   font-weight: 500;
 }
 
-/* Social Icons */
 .social-top {
   position: absolute;
   top: 20px;
@@ -62,39 +55,24 @@ header nav ul li a {
 .social-icon {
   margin-left: 10px;
   color: #000;
-  font-size: 1.2em;
-  text-decoration: none;
+  font-size: 1.5em;
 }
 
-/* Sections */
 section {
   padding: 60px 0;
 }
 
-section h2 {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-section p {
-  font-size: 1em;
-  margin-bottom: 20px;
-}
-
-/* Skills Section */
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 20px;
   text-align: center;
 }
 
 .skill {
   display: flex;
-  flex-direction: column-reverse;  /* Places the text above the icon */
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 10px;
   background: #fff;
   border: 1px solid #ddd;
@@ -108,18 +86,7 @@ section p {
 
 .skill i {
   font-size: 2.5em;
-  margin-top: 10px;
-}
-
-.skill p {
-  margin: 0;
-  font-weight: 600;
-  font-size: 1.1em;
-}
-
-/* Projects Section */
-.project {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .project h3 a {
@@ -129,28 +96,9 @@ section p {
   font-size: 1.5em;
 }
 
-.project p {
-  font-size: 1em;
-  margin-top: 10px;
-}
-
-/* Job Section */
-#job p {
-  font-size: 1em;
-}
-
-/* Contact Section */
-.social-icons {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-/* Footer */
 footer {
   background: #fff;
   padding: 20px;
   text-align: center;
   border-top: 1px solid #ccc;
-  font-size: 0.9em;
 }
